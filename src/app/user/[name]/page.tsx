@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { FC } from "react";
 
+export const runtime = "edge";
+
 export const generateStaticParams = () => {
   return [{ name: "vercel" }, { name: "y-hiraoka" }];
 };
