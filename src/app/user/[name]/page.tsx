@@ -3,6 +3,8 @@ import { FC } from "react";
 
 export const runtime = "edge";
 
+export const revalidate = 60;
+
 export const generateStaticParams = () => {
   return [{ name: "vercel" }, { name: "y-hiraoka" }];
 };
